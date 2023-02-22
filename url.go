@@ -6,7 +6,7 @@ import (
 	"net/url"
 )
 
-func RandUrl(n int) (string, error) {
+func Url(n int) (string, error) {
 	randArray := make([]byte, n)
 	if _, err := rand.Read(randArray); err != nil {
 		return "", errors.New("unable to create random url")

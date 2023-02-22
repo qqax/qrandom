@@ -5,7 +5,7 @@ import (
 	"errors"
 )
 
-func RandByteArray(n int) ([]byte, error) {
+func ByteArray(n int) ([]byte, error) {
 	randArray := make([]byte, n)
 	if _, err := rand.Read(randArray); err != nil {
 		return nil, errors.New("unable to create random byte array")

@@ -6,7 +6,7 @@ import (
 	"math/big"
 )
 
-func RandIntBetween(min, max int64) (int64, error) {
+func IntBetween(min, max int64) (int64, error) {
 	if min >= max {
 		return 0, fmt.Errorf("max should be more as min, got min = %d & max = %d", min, max)
 	}
