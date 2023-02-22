@@ -1,3 +1,3 @@
-module github.com/qqax/qstrings
+module github.com/qqax/qrandom
 
 go 1.19

@@ -1,4 +1,4 @@
-package qstrings
+package qrandom
 
 import (
 	"math/rand"

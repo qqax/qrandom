@@ -1,1 +1,1 @@
-#qstrings
+#qrandom
