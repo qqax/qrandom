@@ -23,8 +23,8 @@ var src = rand.NewSource(time.Now().UnixNano())
 //	return *(*string)(unsafe.Pointer(&b.buf))
 //}
 
-// String Random string from bytes with mask, improved with source and unsafe.
-func String(n int) string {
+// CreateString Random string from bytes with mask, improved with source and unsafe.
+func CreateString(n int) string {
 	b := make([]byte, n)
 	// A src.Int63() generates 63 random bits, enough for letterIdxMax characters!
 	for i, cache, remain := n-1, src.Int63(), letterIdxMax; i >= 0; {
