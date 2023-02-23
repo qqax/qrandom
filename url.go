@@ -6,7 +6,8 @@ import (
 	"net/url"
 )
 
-func Url(n int) (string, error) {
+// CreateEscapedString create a random escaped string of length n, so it can be safely placed inside a URL query.
+func CreateEscapedString(n int) (string, error) {
 	randArray := make([]byte, n)
 	if _, err := rand.Read(randArray); err != nil {
 		return "", errors.New("unable to create random url")
